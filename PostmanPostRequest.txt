@@ -1,0 +1,20 @@
+Create a New Request:
+  Open Postman and create a new request.
+  Set Method to POST.
+  Use the endpoint: https://gorest.co.in/public/v2/users
+Set Authorization:
+    In the Headers tab, add:
+      Authorization: Bearer <your_access_token>
+      Content-Type: application/json
+Set Request Body:
+    Select Body → raw → JSON and add this payload:
+      {
+        "name": "Test User",
+        "gender": "male",
+        "email": "testuser123@example.com",
+        "status": "active"
+      }
+Extract the Created User’s ID:
+    In the Tests tab, add the following script to store the id:    
+      var jsonData = pm.response.json();
+      pm.globals.set("user_id", jsonData.id);
