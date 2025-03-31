@@ -4,7 +4,7 @@ Create a New Request:
   Use the endpoint: https://gorest.co.in/public/v2/users
 Set Authorization:
     In the Headers tab, add:
-      Authorization: Bearer <your_access_token>
+      Authorization: Bearer token
       Content-Type: application/json
 Set Request Body:
     Select Body → raw → JSON and add this payload:
