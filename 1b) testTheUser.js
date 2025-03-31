@@ -6,5 +6,6 @@ pm.test("User exists", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData).to.have.property("id");
     pm.expect(jsonData).to.have.property("name", "Usha");
+    pm.expect(jsonData).to.have.property("gender", "female");
     pm.expect(jsonData).to.have.property("email");
 });
