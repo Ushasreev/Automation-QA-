@@ -9,10 +9,10 @@ Set Authorization:
 Set Request Body:
     Select Body → raw → JSON and add this payload:
       {
-        "name": "Usha",
-        "gender": "female",
-        "email": "Usha123@example.com",
-        "status": "active"
+        "name": "Madhu test",
+        "email": "Madhu-y@test.com",
+        "gender": "male",
+        "status": "active"
       }
 Extract the Created User’s ID:
     In the Tests tab, add the following script to store the id:    
